@@ -64,6 +64,8 @@ npm install
 3. **Start the backend server**
 ```bash
 cd backend
+npm run simple
+# OR
 node src/simple-server.js
 ```
 The backend will start on `http://localhost:3001`
