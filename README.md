@@ -40,6 +40,7 @@ A full-stack project management platform built with React, Node.js, and AWS serv
 ### Prerequisites
 - Node.js 18+
 - Git
+- npm or yarn
 
 ### Quick Start (Local Development)
 
