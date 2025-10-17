@@ -16,6 +16,18 @@ const users = [];
 const projects = [];
 const tasks = [];
 
+// Add some sample data for demo purposes
+if (users.length === 0) {
+  users.push({
+    id: 'demo-user-1',
+    name: 'Demo User',
+    email: 'demo@example.com',
+    password: '$2b$10$demo.hash.here', // This would be properly hashed
+    role: 'admin',
+    createdAt: new Date().toISOString()
+  });
+}
+
 // Simple authentication middleware
 const authenticateToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
