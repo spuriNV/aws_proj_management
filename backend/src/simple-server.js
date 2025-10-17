@@ -48,7 +48,12 @@ const authenticateToken = (req, res, next) => {
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Server is running!' });
+  res.json({ 
+    status: 'OK', 
+    message: 'Server is running!',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime()
+  });
 });
 
 // Auth routes
