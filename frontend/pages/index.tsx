@@ -59,7 +59,7 @@ export default function Home() {
         <meta name="description" content="Secure project management with zero trust security" />
       </Head>
       
-      <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-100 flex items-center justify-center p-4" data-testid="login-page">
         <div className="max-w-md w-full">
           {/* Header */}
           <div className="text-center mb-8">
